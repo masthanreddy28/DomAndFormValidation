@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+  <link rel="stylesheet" href="Dom.css"> 
+    
+</head>
+<body>
+    <!-- <form>  
+        Enter No:<input type="text" id="number" name="number"/><br/>  
+        <input type="button" value="cube" onclick="getcube()"/>  
+        </form>   -->
+
+        <!-- <form>  
+            Male:<input type="radio" name="gender" value="male">  
+            Female:<input type="radio" name="gender" value="female">  
+              
+            <input type="button" onclick="totalelements()" value="Total Genders">  
+            </form>   -->
+
+            <!-- <p>This is a pragraph</p>  
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+<p>Let's see the simple example</p>  
+<button onclick="countpara()">count paragraph</button>   -->
+
+<!-- <h2>This is h2 tag</h2>  
+<h2>This is h2 tag</h2>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<button onclick="counth2()">count h2</button>  
+<button onclick="counth3()">count h3</button> -->
+
+<!-- <form name="myForm">  
+    <input type="button" value="comment" onclick="showcommentform()">  
+    <div id="mylocation"></div>  
+    </form> -->
+
+    <h1>REGISTRATION FORM</h1>
+    <form name="RegForm" onsubmit="return validateForm()">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" 
+                placeholder="Enter your full name" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="Address" 
+                placeholder="Enter your address" />
+            <span id="address-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="text" id="email" name="EMail" 
+                placeholder="Enter your email" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" />
+            <span id="password-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="subject">Select Your Course:</label>
+            <select id="subject" name="Subject">
+                <option value="">
+                    Select Course
+                </option>
+                <option value="BTECH">
+                    BTECH
+                </option>
+                <option value="BBA">
+                    BBA
+                </option>
+                <option value="BCA">
+                    BCA
+                </option>
+                <option value="B.COM">
+                    B.COM
+                </option>
+            </select>
+            <span id="subject-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="comment">College Name:</label>
+            <textarea id="comment" name="Comment"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" id="agree" name="Agree" />
+            <label for="agree">I agree to the above
+                information</label>
+            <span id="agree-error" class="error-message"></span>
+        </p>
+        <p>
+            <input type="submit" value="Send" name="Submit" />
+            <input type="reset" value="Reset" name="Reset" />
+        </p>
+    </form>
+    <script src="DomJavascript.js"></script>
+</body>
+
+</html>
